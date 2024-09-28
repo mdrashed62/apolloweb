@@ -3,7 +3,6 @@ import Navbar3 from "../SharedNav/Navbar3";
 import logoPhoto from "../../../public/assests/images.jpeg";
 import Image from "next/image";
 import { FaBell, FaRegTrashAlt, FaStickyNote, FaToggleOn, FaUser } from "react-icons/fa";
-import { Avatar } from "@nextui-org/react";
 
 
 const RightNav = () => {
@@ -90,7 +89,8 @@ const RightNav = () => {
             </p>
           </div>
           </div>
-          <div className="px-10 mt-[22px] text-center justify-center flex items-center gap-4 text-red-500">
+
+          <div className="px-10 mt-4 text-center justify-center flex items-center gap-4 text-red-500">
           <FaRegTrashAlt className="" />
           <p>Delete and leave</p>
           </div>

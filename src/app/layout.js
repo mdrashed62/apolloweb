@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
       >
        <MainNav/>
         <Provider>
-        <div className="flex flex-col h-screen">
+        <div className="flex flex-col max-h-[100vh]">
           {children}
         </div>
         </Provider>

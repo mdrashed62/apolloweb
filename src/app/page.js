@@ -15,7 +15,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex container mx-auto]">
+    <div className="flex">
       <div className="w-[35%] flex">
         <div className="w-1/4">
           <LeftInfoNav />

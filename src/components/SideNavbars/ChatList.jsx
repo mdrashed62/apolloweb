@@ -146,11 +146,7 @@ const ChatList = () => {
               </p>
             </div>
             <div className="flex gap-2 items-center lg:mb-6 pl-5 pr-7">
-              <Avatar
-                isBordered
-                radius="full"
-                src="https://i.pravatar.cc/150?u=a04258114e29026708c"
-              />
+            <Avatar isBordered src="https://i.pravatar.cc/150?u=a04258a2462d826712d" />
 
               <div className="flex items-center">
                 <div>
@@ -174,11 +170,7 @@ const ChatList = () => {
         <div className="lg:pb-4">
           <div className="relative">
             <div className="flex gap-2 items-center lg:mb-6 pl-5 pr-7">
-              <Avatar
-                isBordered
-                radius="full"
-                src="https://i.pravatar.cc/150?u=a04258114e29026708c"
-              />
+            <Avatar isBordered src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
 
               <div className="flex items-center">
                 <div>
@@ -201,11 +193,7 @@ const ChatList = () => {
         <div className="lg:pb-4">
           <div className="relative">
             <div className="flex gap-2 items-center lg:mb-6 pl-5 pr-7">
-              <Avatar
-                isBordered
-                radius="full"
-                src="https://i.pravatar.cc/150?u=a04258114e29026708c"
-              />
+            <Avatar isBordered src="https://i.pravatar.cc/150?u=a04258114e29026302d" />
 
               <div className="flex items-center">
                 <div>
@@ -228,15 +216,11 @@ const ChatList = () => {
         <div className="lg:pb-4">
           <div className="relative">
             <div className="flex gap-2 items-center lg:mb-6 pl-5 pr-7">
-              <Avatar
-                isBordered
-                radius="full"
-                src="https://i.pravatar.cc/150?u=a04258114e29026708c"
-              />
+            <Avatar isBordered src="https://i.pravatar.cc/150?u=a04258114e29026702d" />
 
               <div className="flex items-center">
                 <div>
-                  <h1 className="font-semibold">Yea Saleh</h1>
+                  <h1 className="font-semibold">Sharlo sein</h1>
                   <p className="text-[14px] text-[#0000007A] text-opacity-10">
                     Here will be last text
                   </p>
@@ -255,15 +239,11 @@ const ChatList = () => {
         <div className="">
           <div className="relative">
             <div className="flex gap-2 items-center lg:mb-6 pl-5 pr-7">
-              <Avatar
-                isBordered
-                radius="full"
-                src="https://i.pravatar.cc/150?u=a04258114e29026708c"
-              />
+            <Avatar isBordered src="https://i.pravatar.cc/150?u=a04258114e29026708c" />
 
               <div className="flex items-center">
                 <div>
-                  <h1 className="font-semibold">Yea Saleh</h1>
+                  <h1 className="font-semibold">Hridoy Mondol</h1>
                   <p className="text-[14px] text-[#0000007A] text-opacity-10">
                     Here will be last text
                   </p>

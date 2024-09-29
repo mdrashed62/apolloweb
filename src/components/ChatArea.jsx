@@ -51,12 +51,7 @@ const ChatArea = () => {
 
         <div className="flex gap-2 items-center ml-3">
           <div className="w-9 h-9">
-            <Avatar
-              className="w-9 h-9"
-              isBordered
-              color="danger"
-              src="https://i.pravatar.cc/150?u=a04258114e29026708c"
-            />
+          <Avatar isBordered src="https://i.pravatar.cc/150?u=a04258a2462d826712d" />
           </div>
           <div>
             <div className="flex items-center justify-between">
@@ -84,12 +79,7 @@ const ChatArea = () => {
 
         <div className="flex gap-2 items-center ml-3">
           <div className="w-9 h-9">
-            <Avatar
-              className="w-9 h-9"
-              isBordered
-              color="danger"
-              src="https://i.pravatar.cc/150?u=a04258114e29026708c"
-            />
+          <Avatar isBordered src="https://i.pravatar.cc/150?u=a042581f4e29026704d" />
           </div>
           <div>
             <div className="flex items-center justify-between">

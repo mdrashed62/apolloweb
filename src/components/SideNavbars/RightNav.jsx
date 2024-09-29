@@ -143,7 +143,7 @@ const RightNav = () => {
         </div>
       </div>
 
-      {/* Delete and Leave Button */}
+     
       <div className="px-10 mt-6 text-center justify-center flex items-center gap-4 text-red-500">
         <FaRegTrashAlt />
         <p>Delete and leave</p>

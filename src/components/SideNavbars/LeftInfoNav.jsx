@@ -5,6 +5,7 @@ import { Avatar } from "@nextui-org/react";
 import {
   FaBookmark,
   FaCommentDots,
+  FaFolderMinus,
   FaPhoneAlt,
   FaUserFriends,
   FaVolumeDown,
@@ -32,7 +33,7 @@ const LeftInfoNav = () => {
             src="https://i.pravatar.cc/150?u=a04258114e29026702d"
           />
           <div>
-            <p className="w-3 h-3 bg-[#3DA0E1] absolute right-[34px] top-10 text-white  flex items-center justify-center rounded-full">
+            <p className="w-3 h-3 bg-[#3DA0E1] absolute right-[40px] top-10 text-white  flex items-center justify-center rounded-full">
               <span className="text-[10px]">+</span>
             </p>
           </div>
@@ -53,12 +54,27 @@ const LeftInfoNav = () => {
         </div>
         <div className="flex mt-[50px] flex-col items-center relative justify-center gap-5">
           <FaPhoneAlt className="text-gray-400" />
-          <div className="absolute w-2 h-2 rounded-full bg-red-500 -top-[4px] right-14"></div>
+          <div className="absolute w-2 h-2 rounded-full bg-red-500 -top-[4px] right-[52px]"></div>
         </div>
       </div>
 
+      <div className="flex flex-col">
+      <div className="flex items-center justify-center">
+        <div className="relative">
+          <div className="w-8 h-8 rounded-full border-4 border-gray-300"></div>
+          <div
+            className="absolute top-0 left-0 w-8 h-8  rounded-full border-4 border-[#3DA0E1] border-t-transparent"
+            style={{ transform: "rotate(252deg)" }}
+          ></div>
+          <div className="absolute top-1 left-1 w-6 h-6  flex items-center justify-center">
+          <FaFolderMinus className="text-[#3DA0E1] "/>
+          </div>
+        </div>
+      </div>
      
-      <div className="flex items-center justify-center mt-10 flex-grow">
+     <p className="text-center text-[8px] font-bold pt-2 pb-6">89.5GB</p>
+
+      <div className="flex items-center justify-center">
         <label className="flex items-center cursor-pointer">
           <div className="relative">
             <input type="checkbox" className="hidden" />
@@ -67,6 +83,9 @@ const LeftInfoNav = () => {
           </div>
         </label>
       </div>
+      </div>
+
+      
     </div>
   );
 };

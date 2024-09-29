@@ -132,7 +132,7 @@ const RightNav = () => {
           </div>
 
 
-          {/* <div className="px-5 mt-6 flex items-center justify-between">
+          <div className="px-5 mt-6 flex items-center justify-between">
           <div className="flex gap-3 items-center text-[12px] font-bold">
           <Avatar isBordered color="success" src="https://i.pravatar.cc/150?u=a04258114e29026302d" />
           <h1>Joe Smith</h1>
@@ -146,7 +146,7 @@ const RightNav = () => {
           <h1>Joe Smith</h1>
           </div>
           <h1 className="text-[12px] font-semibold text-gray-400 text-opacity-80">Developer</h1>
-          </div> */}
+          </div>
 
 
 

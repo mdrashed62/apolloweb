@@ -173,9 +173,9 @@ const ChatArea = () => {
                 <FaPlusCircle className="text-gray-400 ml-[3px] " />{" "}
               </div>
               <div>😢 </div>
-              <div>😢 </div>
-              <div>😢 </div>
-              <div>😢 </div>
+              <div>😍 </div>
+              <div>😧 </div>
+              <div>😆 </div>
             </div>
           </div>
           <div className="absolute -right-10 top-4 p-1 text-white bg-[#3DA0E1] rounded-full">

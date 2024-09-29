@@ -1,20 +1,22 @@
 import { Avatar } from '@nextui-org/react';
 import React from 'react';
 import { FaEllipsisV, FaPhoneAlt, FaSearch, FaThLarge } from "react-icons/fa";
+import photo from '../../../public/assests/images.jpeg'
+import Image from 'next/image';
 
-const Navbar2 = ({ chat }) => {
+const Navbar2 = () => {
   return (
     <div
-      className='flex items-center pl-6 justify-between py-[13px]'
+      className='flex items-center justify-between p-4'
       style={{
         background: "linear-gradient(to right, #F8F5F8 15%, #F1E4F6 25%, #FFF9F9 60%)",
       }}
     >
       <div className='flex gap-2 items-center'>
-        <Avatar src={chat.avatar} name="Joe" />
+       <Image width={30} height={30} src={photo} alt="photo" />
         <div>
-          <h1 className='font-semibold'>{chat.name}</h1>
-          <p className='text-[14px]'>{chat.status}</p>
+          <h1 className='font-semibold'>Duxica Team</h1>
+          <p className='text-[10px]'>22 Members. 12 Online</p>
         </div>
       </div>
 

@@ -12,7 +12,7 @@ import {
 
 const LeftInfoNav = () => {
   return (
-    <div className="border-r-1 relative h-[100vh]">
+    <div className="border-r-1 relative w-full h-full flex flex-col justify-between">
       <div className="p-4 overflow-hidden flex items-center justify-center">
         <div className="w-10 h-10 overflow-hidden">
           <Image
@@ -39,9 +39,12 @@ const LeftInfoNav = () => {
         </div>
       </div>
 
-      <div className="">
+      <div className="flex-grow">
         <div className="flex flex-col items-center justify-center gap-5">
-          <FaCommentDots className="text-[#3DA0E1]" />
+          <div className="">
+            <FaCommentDots className="text-[#3DA0E1]" />
+            <div className="w-1 h-8 bg-[#3DA0E1] absolute top-[156px] right-0"></div>
+          </div>
           <FaBookmark className="text-gray-400" />
         </div>
         <div className="flex flex-col mt-14 items-center justify-center gap-5">
@@ -50,21 +53,20 @@ const LeftInfoNav = () => {
         </div>
         <div className="flex mt-[50px] flex-col items-center relative justify-center gap-5">
           <FaPhoneAlt className="text-gray-400" />
-          <div className="absolute w-2 h-2 rounded-full bg-red-500 -top-[4px] right-11"></div>
+          <div className="absolute w-2 h-2 rounded-full bg-red-500 -top-[4px] right-14"></div>
         </div>
       </div>
 
-      <div class="flex items-center justify-center absolute -bottom-[60px] right-11">
-        
-        <label class="flex items-center cursor-pointer">
-            <div class="relative">
-                <input type="checkbox" class="hidden" />
-                <div class="block bg-[#3DA0E1] w-6 h-14 rounded-full"></div>
-                <div class="dot absolute left-[2px] top-1 bg-white w-5 h-6 rounded-full transition"></div>
-            </div>
+     
+      <div className="flex items-center justify-center mt-10 flex-grow">
+        <label className="flex items-center cursor-pointer">
+          <div className="relative">
+            <input type="checkbox" className="hidden" />
+            <div className="block bg-[#3DA0E1] w-6 h-14 rounded-full"></div>
+            <div className="dot absolute left-[2px] top-1 bg-white w-5 h-6 rounded-full transition"></div>
+          </div>
         </label>
-    </div>
-
+      </div>
     </div>
   );
 };

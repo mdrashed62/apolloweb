@@ -3,10 +3,10 @@ import React from "react";
 import { FaChevronRight, FaHashtag, FaSearch, FaThumbtack, FaTimes } from "react-icons/fa";
 import { FaPen } from "react-icons/fa";
 
-const ChatList = ({ chats, onChatClick }) => {
+const ChatList = () => {
   return (
-    <div>
-      <nav className="flex items-center justify-center border-b-1 p-4 gap-3 bg-white">
+    <div className="">
+      <nav className="flex items-center justify-center border-b-1 p-[16px] gap-3 bg-white">
           <div className="flex gap-4 items-center">
             <Avatar
               isBordered
@@ -31,7 +31,7 @@ const ChatList = ({ chats, onChatClick }) => {
           </div>
           <FaChevronRight className="text-[8px] text-blue-500" />
         </nav>
-      <div className="border-r-1 bg-[#FAFAFA]">
+      <div className="border-r-1 bg-[#FAFAFA] overflow-y-scroll scrollbar-thin max-h-screen">
         <div className="flex items-center justify-between pl-5 pr-7 pt-4">
           <h1 className="text-xl font-bold flex items-center gap-4">
             Messages{" "}
@@ -64,34 +64,29 @@ const ChatList = ({ chats, onChatClick }) => {
                 PIN CHATS
               </p>
             </div>
-            { chats.map((chat) => (<div key={chat.id} onClick={() => onChatClick(chat)} className="flex gap-2 items-center pl-5 pr-7">
-              <Avatar
-                isBordered
-                radius="full"
-                src={chat.avatar}
-              />
+           <div className="flex gap-2 items-center pl-5 pr-7">
+           <Avatar isBordered color="default" src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
 
               <div className="flex items-center">
                 <div>
-                  <h1 className="font-semibold">{chat.name}</h1>
+                  <h1 className="font-semibold">Md Rashed Biswas</h1>
                   <p className="text-[14px] text-[#0000007A] text-opacity-10">
-                  {chat.lastMessage}
+                  hey
                   </p>
                 </div>
                 <div>
                   <span className="w-5 h-5 absolute bg-[#FE1E37] right-[34px] top-9 text-white transform -translate-y-1/2 flex items-center justify-center rounded-full">
-                    <span className="text-[10px]">{chat.unreadCount}</span>
+                    <span className="text-[10px]">3</span>
                   </span>
 
                   <p className="text-[14px] absolute right-7 bottom-0">12:52</p>
                 </div>
               </div>
-            </div>))
-            }
+            </div>
           </div>
         </div>
 
-        <div className="lg:pb-8">
+        <div className="lg:mb-6 border-l-4 border-[#3DA0E1] bg-[#E9F1F7] py-2">
           <div className="relative">
             <div className="pl-5 pr-7 flex items-center gap-3 ">
             <div className="bg-gray-500 p-[2px] rounded-md">
@@ -203,7 +198,61 @@ const ChatList = ({ chats, onChatClick }) => {
             </div>
           </div>
         </div>
-        <div className="lg:mt-2">
+        <div className="lg:pb-4">
+          <div className="relative">
+            <div className="flex gap-2 items-center lg:mb-6 pl-5 pr-7">
+              <Avatar
+                isBordered
+                radius="full"
+                src="https://i.pravatar.cc/150?u=a04258114e29026708c"
+              />
+
+              <div className="flex items-center">
+                <div>
+                  <h1 className="font-semibold">Yea Saleh</h1>
+                  <p className="text-[14px] text-[#0000007A] text-opacity-10">
+                    Here will be last text
+                  </p>
+                </div>
+                <div>
+                  <span className="w-5 h-5 absolute bg-gray-400 right-[34px] top-3 text-white transform -translate-y-1/2 flex items-center justify-center rounded-full">
+                    <span className="text-[10px]">2</span>
+                  </span>
+
+                  <p className="text-[14px] absolute right-7 bottom-0">12:52</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="lg:pb-4">
+          <div className="relative">
+            <div className="flex gap-2 items-center lg:mb-6 pl-5 pr-7">
+              <Avatar
+                isBordered
+                radius="full"
+                src="https://i.pravatar.cc/150?u=a04258114e29026708c"
+              />
+
+              <div className="flex items-center">
+                <div>
+                  <h1 className="font-semibold">Yea Saleh</h1>
+                  <p className="text-[14px] text-[#0000007A] text-opacity-10">
+                    Here will be last text
+                  </p>
+                </div>
+                <div>
+                  <span className="w-5 h-5 absolute bg-gray-400 right-[34px] top-3 text-white transform -translate-y-1/2 flex items-center justify-center rounded-full">
+                    <span className="text-[10px]">2</span>
+                  </span>
+
+                  <p className="text-[14px] absolute right-7 bottom-0">12:52</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="">
           <div className="relative">
             <div className="flex gap-2 items-center lg:mb-6 pl-5 pr-7">
               <Avatar

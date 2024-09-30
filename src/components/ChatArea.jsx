@@ -51,7 +51,10 @@ const ChatArea = () => {
 
         <div className="flex gap-2 items-center ml-3">
           <div className="w-9 h-9">
-          <Avatar isBordered src="https://i.pravatar.cc/150?u=a04258a2462d826712d" />
+            <Avatar
+              isBordered
+              src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
+            />
           </div>
           <div>
             <div className="flex items-center justify-between">
@@ -79,7 +82,10 @@ const ChatArea = () => {
 
         <div className="flex gap-2 items-center ml-3">
           <div className="w-9 h-9">
-          <Avatar isBordered src="https://i.pravatar.cc/150?u=a042581f4e29026704d" />
+            <Avatar
+              isBordered
+              src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+            />
           </div>
           <div>
             <div className="flex items-center justify-between">
@@ -173,7 +179,6 @@ const ChatArea = () => {
           </div>
         </div>
 
-       
         <div className=" mr-5 space-y-1">
           <div className="flex items-center gap-2 justify-end">
             <p className="text-[14px] font-medium">
@@ -187,16 +192,16 @@ const ChatArea = () => {
               />
             </div>
           </div>
-         <div className="flex justify-end">
-         <p
-            style={{ borderRadius: "150px 0px 150px 150px" }}
-            className="bg-gradient-to-r from-[#18889F] to-[#3A93CB] px-3 py-1 text-white"
-          >
-            Hey guys! what you doing?👏🫡 <br />i just finished duxica ui design
-            project.
-          </p>
-         </div>
-       </div>
+          <div className="flex justify-end">
+            <p
+              style={{ borderRadius: "150px 0px 150px 150px" }}
+              className="bg-gradient-to-r from-[#18889F] to-[#3A93CB] px-3 py-1 text-white"
+            >
+              Hey guys! what you doing?👏🫡 <br />i just finished duxica ui
+              design project.
+            </p>
+          </div>
+        </div>
       </div>
 
       <div className="flex w-full absolute items-center -bottom-20 px-5 gap-2 py-3 ">
@@ -213,16 +218,15 @@ const ChatArea = () => {
             placeholder="type something"
             type="text"
           />
-        <div className="flex items-center gap-3 absolute bottom-5 right-8">
-          <FaFileAlt className="text-[#3DA0E1]" />
-          <p className="text-[9px]">2 File</p>
-          <p className="w-2 h-2 rounded-full bg-[#3DA0E1]"></p>
-          <FaMicrophoneAlt className=" text-[#3DA0E1]" />
-          <FaLocationArrow className=" text-[#3DA0E1]" />
+          <div className="flex items-center gap-3 absolute bottom-5 right-8">
+            <FaFileAlt className="text-[#3DA0E1]" />
+            <p className="text-[9px]">2 File</p>
+            <p className="w-2 h-2 rounded-full bg-[#3DA0E1]"></p>
+            <FaMicrophoneAlt className=" text-[#3DA0E1]" />
+            <FaLocationArrow className=" text-[#3DA0E1]" />
+          </div>
         </div>
-        </div>
-       </div>
-    
+      </div>
     </div>
   );
 };

@@ -59,33 +59,31 @@ const LeftInfoNav = () => {
       </div>
 
       <div className="flex flex-col">
-      <div className="flex items-center justify-center">
-        <div className="relative">
-          <div className="w-8 h-8 rounded-full border-4 border-gray-300"></div>
-          <div
-            className="absolute top-0 left-0 w-8 h-8  rounded-full border-4 border-[#3DA0E1] border-t-transparent"
-            style={{ transform: "rotate(252deg)" }}
-          ></div>
-          <div className="absolute top-1 left-1 w-6 h-6  flex items-center justify-center">
-          <FaFolderMinus className="text-[#3DA0E1] "/>
+        <div className="flex items-center justify-center">
+          <div className="relative">
+            <div className="w-8 h-8 rounded-full border-4 border-gray-300"></div>
+            <div
+              className="absolute top-0 left-0 w-8 h-8  rounded-full border-4 border-[#3DA0E1] border-t-transparent"
+              style={{ transform: "rotate(252deg)" }}
+            ></div>
+            <div className="absolute top-1 left-1 w-6 h-6  flex items-center justify-center">
+              <FaFolderMinus className="text-[#3DA0E1] " />
+            </div>
           </div>
         </div>
-      </div>
-     
-     <p className="text-center text-[8px] font-bold pt-2 pb-6">89.5GB</p>
 
-      <div className="flex items-center justify-center">
-        <label className="flex items-center cursor-pointer">
-          <div className="relative">
-            <input type="checkbox" className="hidden" />
-            <div className="block bg-[#3DA0E1] w-6 h-14 rounded-full"></div>
-            <div className="dot absolute left-[2px] top-1 bg-white w-5 h-6 rounded-full transition"></div>
-          </div>
-        </label>
-      </div>
-      </div>
+        <p className="text-center text-[8px] font-bold pt-2 pb-6">89.5GB</p>
 
-      
+        <div className="flex items-center justify-center">
+          <label className="flex items-center cursor-pointer">
+            <div className="relative">
+              <input type="checkbox" className="hidden" />
+              <div className="block bg-[#3DA0E1] w-6 h-14 rounded-full"></div>
+              <div className="dot absolute left-[2px] top-1 bg-white w-5 h-6 rounded-full transition"></div>
+            </div>
+          </label>
+        </div>
+      </div>
     </div>
   );
 };

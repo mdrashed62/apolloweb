@@ -1,36 +1,42 @@
 import { Avatar } from "@nextui-org/react";
 import React from "react";
-import { FaChevronRight, FaHashtag, FaSearch, FaThumbtack, FaTimes } from "react-icons/fa";
+import {
+  FaChevronRight,
+  FaHashtag,
+  FaSearch,
+  FaThumbtack,
+  FaTimes,
+} from "react-icons/fa";
 import { FaPen } from "react-icons/fa";
 
 const ChatList = () => {
   return (
     <div className="">
       <nav className="flex items-center justify-center border-b-1 p-[16px] gap-3 bg-white">
-          <div className="flex gap-4 items-center">
-            <Avatar
-              isBordered
-              color="default"
-              src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
-            />
-            <Avatar
-              isBordered
-              color="primary"
-              src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
-            />
-            <Avatar
-              isBordered
-              color="secondary"
-              src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
-            />
-            <Avatar
-              isBordered
-              color="success"
-              src="https://i.pravatar.cc/150?u=a04258114e29026302d"
-            />
-          </div>
-          <FaChevronRight className="text-[8px] text-blue-500" />
-        </nav>
+        <div className="flex gap-4 items-center">
+          <Avatar
+            isBordered
+            color="default"
+            src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
+          />
+          <Avatar
+            isBordered
+            color="primary"
+            src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
+          />
+          <Avatar
+            isBordered
+            color="secondary"
+            src="https://i.pravatar.cc/150?u=a042581f4e29026704d"
+          />
+          <Avatar
+            isBordered
+            color="success"
+            src="https://i.pravatar.cc/150?u=a04258114e29026302d"
+          />
+        </div>
+        <FaChevronRight className="text-[8px] text-blue-500" />
+      </nav>
       <div className="border-r-1 bg-[#FAFAFA] overflow-y-scroll scrollbar-thin max-h-screen">
         <div className="flex items-center justify-between pl-5 pr-7 pt-4">
           <h1 className="text-xl font-bold flex items-center gap-4">
@@ -64,14 +70,18 @@ const ChatList = () => {
                 PIN CHATS
               </p>
             </div>
-           <div className="flex gap-2 items-center pl-5 pr-7">
-           <Avatar isBordered color="default" src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
+            <div className="flex gap-2 items-center pl-5 pr-7">
+              <Avatar
+                isBordered
+                color="default"
+                src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
+              />
 
               <div className="flex items-center">
                 <div>
                   <h1 className="font-semibold">Md Rashed Biswas</h1>
                   <p className="text-[14px] text-[#0000007A] text-opacity-10">
-                  hey
+                    hey
                   </p>
                 </div>
                 <div>
@@ -89,9 +99,9 @@ const ChatList = () => {
         <div className="lg:mb-6 border-l-4 border-[#3DA0E1] bg-[#E9F1F7] py-2">
           <div className="relative">
             <div className="pl-5 pr-7 flex items-center gap-3 ">
-            <div className="bg-gray-500 p-[2px] rounded-md">
-            <FaHashtag className="text-white opacity-80" />
-            </div>
+              <div className="bg-gray-500 p-[2px] rounded-md">
+                <FaHashtag className="text-white opacity-80" />
+              </div>
               <p className="pb-1 text-gray-500 text-opacity-50 text-sm font-medium">
                 GROUPS & CHANNELS
               </p>
@@ -142,11 +152,14 @@ const ChatList = () => {
           <div className="relative">
             <div className="pl-5 pr-7 flex items-center gap-3 ">
               <p className="pb-1 text-gray-500 text-opacity-50 text-sm font-medium">
-               ALL MESSAGES
+                ALL MESSAGES
               </p>
             </div>
             <div className="flex gap-2 items-center lg:mb-6 pl-5 pr-7">
-            <Avatar isBordered src="https://i.pravatar.cc/150?u=a04258a2462d826712d" />
+              <Avatar
+                isBordered
+                src="https://i.pravatar.cc/150?u=a04258a2462d826712d"
+              />
 
               <div className="flex items-center">
                 <div>
@@ -166,11 +179,14 @@ const ChatList = () => {
             </div>
           </div>
         </div>
-      
+
         <div className="lg:pb-4">
           <div className="relative">
             <div className="flex gap-2 items-center lg:mb-6 pl-5 pr-7">
-            <Avatar isBordered src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
+              <Avatar
+                isBordered
+                src="https://i.pravatar.cc/150?u=a042581f4e29026024d"
+              />
 
               <div className="flex items-center">
                 <div>
@@ -193,7 +209,10 @@ const ChatList = () => {
         <div className="lg:pb-4">
           <div className="relative">
             <div className="flex gap-2 items-center lg:mb-6 pl-5 pr-7">
-            <Avatar isBordered src="https://i.pravatar.cc/150?u=a04258114e29026302d" />
+              <Avatar
+                isBordered
+                src="https://i.pravatar.cc/150?u=a04258114e29026302d"
+              />
 
               <div className="flex items-center">
                 <div>
@@ -216,7 +235,10 @@ const ChatList = () => {
         <div className="lg:pb-4">
           <div className="relative">
             <div className="flex gap-2 items-center lg:mb-6 pl-5 pr-7">
-            <Avatar isBordered src="https://i.pravatar.cc/150?u=a04258114e29026702d" />
+              <Avatar
+                isBordered
+                src="https://i.pravatar.cc/150?u=a04258114e29026702d"
+              />
 
               <div className="flex items-center">
                 <div>
@@ -239,7 +261,10 @@ const ChatList = () => {
         <div className="">
           <div className="relative">
             <div className="flex gap-2 items-center lg:mb-6 pl-5 pr-7">
-            <Avatar isBordered src="https://i.pravatar.cc/150?u=a04258114e29026708c" />
+              <Avatar
+                isBordered
+                src="https://i.pravatar.cc/150?u=a04258114e29026708c"
+              />
 
               <div className="flex items-center">
                 <div>
@@ -259,7 +284,6 @@ const ChatList = () => {
             </div>
           </div>
         </div>
-        
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ import RightNav from "@/components/SideNavbars/RightNav";
 export default function Home() {
  
   return (
-    <div className="flex">
+    <div className="flex container w-full h-full">
     
         <div className="w-1/12 h-screen">
           <LeftInfoNav />
@@ -22,9 +22,10 @@ export default function Home() {
       <ChatArea />
       </div>
 
-      <div className="w-3/12 h-screen ">
+      <div className="w-3/12 h-screen">
         <RightNav />
       </div>
+
     </div>
   );
 }

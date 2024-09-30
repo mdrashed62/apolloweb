@@ -16,14 +16,14 @@ import img3 from "../../../public/assests/img6.jpg";
 
 const RightNav = () => {
   return (
-    <div className="border-l-1 w-full h-full flex flex-col justify-between">
+    <div className="border-l-1 w-full h-full flex flex-col justify-between relative">
       <div>
         <div className="px-5 py-[24px] border-b-1">
           <Navbar3 />
         </div>
 
         <div>
-          <div className="flex flex-col items-center justify-center mt-6">
+          <div className="flex flex-col items-center justify-center mt-2">
             <div className="pr-3">
               <div className="w-16 h-16 overflow-hidden">
                 <Image
@@ -37,25 +37,31 @@ const RightNav = () => {
             </div>
             <div className="text-center">
               <h1 className="font-semibold">Duxica Team</h1>
-              <p className="text-[14px] text-gray-400 font-medium">22 members</p>
+              <p className="text-[14px] text-gray-400 font-medium">
+                22 members
+              </p>
             </div>
           </div>
 
-          <div className="mt-4 space-y-2 px-5 mb-6">
+          <div className="mt-2 space-y-2 px-5 mb-3">
             <h1 className="text-sm font-bold">Description</h1>
             <p className="text-[12px] text-gray-500 text-opacity-60">
               We are a digital design agency based in Vancouver, Canada with{" "}
-              <span className="font-semibold text-black opacity-65">10+ years</span>{" "}
+              <span className="font-semibold text-black opacity-65">
+                10+ years
+              </span>{" "}
               of experience designing products{" "}
             </p>
           </div>
 
-          <div className="px-5 mb-8 flex justify-between items-center">
-            <h1 className="text-[#2695CF] text-[12px] font-bold">@Duxica_Team</h1>
+          <div className="px-5 mb-4 flex justify-between items-center">
+            <h1 className="text-[#2695CF] text-[12px] font-bold">
+              @Duxica_Team
+            </h1>
             <FaStickyNote className="text-[#2695CF]" />
           </div>
 
-          <div className="px-5 mb-8 flex items-center justify-between">
+          <div className="px-5 mb-4 flex items-center justify-between">
             <div className="flex gap-4">
               <FaBell className="text-[#2695CF]" />
               <p className="text-[12px] text-gray-400">Notifications</p>
@@ -72,7 +78,9 @@ const RightNav = () => {
                   <div className="w-1 h-1 rounded-full bg-gray-500"></div>
                 </div>
               </div>
-              <p className="text-[13px] font-bold text-gray-600">Shared Media</p>
+              <p className="text-[13px] font-bold text-gray-600">
+                Shared Media
+              </p>
             </div>
             <p className="text-[13px] text-[#2695CF]">(3475 items)</p>
           </div>
@@ -123,30 +131,44 @@ const RightNav = () => {
               </p>
             </div>
           </div>
-
-          {/* Member List */}
-          <div className="px-5 mt-6 flex items-center justify-between">
-            <div className="flex gap-3 items-center text-[12px] font-bold">
-              <Avatar isBordered color="success" src="https://i.pravatar.cc/150?u=a04258114e29026302d" />
-              <h1>Joe Smith</h1>
-            </div>
-            <h1 className="text-[12px] font-semibold text-gray-400 text-opacity-80">Developer</h1>
-          </div>
-
-          <div className="px-5 mt-6 flex items-center justify-between">
-            <div className="flex gap-3 items-center text-[12px] font-bold">
-              <Avatar isBordered color="success" src="https://i.pravatar.cc/150?u=a04258114e29026302d" />
-              <h1>Joe Smith</h1>
-            </div>
-            <h1 className="text-[12px] font-semibold text-gray-400 text-opacity-80">Developer</h1>
-          </div>
         </div>
-      </div>
+        <div className="px-5 mt-6 flex items-center justify-between">
+          <div className="flex gap-3 items-center text-[12px] font-bold">
+            <div className="w-6 h-6">
+              <Avatar
+                className="w-full h-full"
+                isBordered
+                color="success"
+                src="https://i.pravatar.cc/150?u=a04258114e29026302d"
+              />
+            </div>
+            <h1>Tallan Mesi</h1>
+          </div>
+          <h1 className="text-[12px] font-semibold py-1 px-1 text-white bg-[#3DA0E1] rounded-xl text-opacity-80">
+           Owener
+          </h1>
+        </div>
 
-     
-      <div className="px-10 mt-6 text-center justify-center flex items-center gap-4 text-red-500">
-        <FaRegTrashAlt />
-        <p>Delete and leave</p>
+        <div className="px-5 mt-2 flex items-center justify-between">
+          <div className="flex gap-3 items-center text-[12px] font-bold">
+            <div className="w-6 h-6">
+              <Avatar
+                className="w-full h-full"
+                isBordered
+                color="success"
+                src="https://i.pravatar.cc/150?u=a04258114e29026302d"
+              />
+            </div>
+            <h1>Joe Smith</h1>
+          </div>
+          <h1 className="text-[12px] font-semibold text-gray-400 text-opacity-80">
+            Developer
+          </h1>
+        </div>
+        <div className="px-10 mt-2 absolute font-semibold -bottom-[75px] left-16 text-center justify-center flex items-center gap-4 text-red-500">
+          <FaRegTrashAlt />
+          <p>Delete and leave</p>
+        </div>
       </div>
     </div>
   );
